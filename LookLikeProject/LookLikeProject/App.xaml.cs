@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace ceci;
+namespace LookLikeProject;
 
 /// <summary>
 /// Interaction logic for App.xaml

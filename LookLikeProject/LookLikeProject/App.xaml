@@ -1,7 +1,7 @@
-﻿<Application x:Class="ceci.App"
+﻿<Application x:Class="LookLikeProject.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ceci"
+             xmlns:local="clr-namespace:LookLikeProject"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
          
