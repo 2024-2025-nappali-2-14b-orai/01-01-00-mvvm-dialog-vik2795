@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LookLikeProject"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="10">
+    <Grid Margin="10" Background="LightSkyBlue">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
