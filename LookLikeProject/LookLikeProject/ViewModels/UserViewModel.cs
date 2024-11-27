@@ -14,10 +14,10 @@ namespace LookLikeProject.ViewModels
     public partial class UserViewModel:ObservableObject
     {
         [ObservableProperty]
-        private User _user;
+        private User _user=;
 
         [ObservableProperty]
-        private User user = new User();
+        private List<User> _users = 
 
         public UserViewModel()
         {
@@ -30,7 +30,7 @@ namespace LookLikeProject.ViewModels
         [RelayCommand]
         public void DoSave(User user)
         {
-            User.Add(user);
+            Users.Add(user);
             User = new User();
             User.Szuldatum = DateTime.Now.AddYears(-14);
             OnPropertyChanged(nameof(User));
@@ -47,7 +47,7 @@ namespace LookLikeProject.ViewModels
         [RelayCommand]
         public void DoDelete(User user)
         {
-            User.Remove(user);
+            Users.Remove(user);
             User = new User();
             User.Szuldatum = DateTime.Now.AddYears(-14);
             OnPropertyChanged(nameof(User));
