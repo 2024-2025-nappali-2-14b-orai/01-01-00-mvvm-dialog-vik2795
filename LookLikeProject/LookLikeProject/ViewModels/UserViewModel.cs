@@ -21,7 +21,7 @@ namespace LookLikeProject.ViewModels
 
         public UserViewModel()
         {
-            User.Szuldatum = DateTime.Now.AddYears(-14);
+            User.Szuldatum = DateTime.Now;
         }
 
         [RelayCommand]
@@ -34,7 +34,7 @@ namespace LookLikeProject.ViewModels
         }
 
         [RelayCommand]
-        public void DoNewStudent()
+        public void DoNewUser()
         {
             User = new User();
             User.Szuldatum = DateTime.Now.AddYears(-14);
@@ -44,10 +44,11 @@ namespace LookLikeProject.ViewModels
         [RelayCommand]
         public void DoDelete(User user)
         {
-            Users.Remove(user);
-            User = new User();
-            User.Szuldatum = DateTime.Now.AddYears(-14);
-            OnPropertyChanged(nameof(User));
+              Users.Remove(user);
+              User = new User();
+              User.Szuldatum = DateTime.Now.AddYears(-14);
+              OnPropertyChanged(nameof(User));
+            
         }
     }
 }

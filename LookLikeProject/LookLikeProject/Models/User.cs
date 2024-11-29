@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LookLikeProject.Models;
 
 namespace LookLikeProject.Models
 {
@@ -35,6 +30,10 @@ namespace LookLikeProject.Models
             Email=string.Empty;
             UserName=string.Empty;
             Passw=string.Empty;
+        }
+        public override string ToString()
+        {
+            return $"{Vnev} {Kernev} ({UserName}.{Email}) - ({String.Format("{0:yyyy.MM.dd.}", Szuldatum)})";
         }
     }
 }

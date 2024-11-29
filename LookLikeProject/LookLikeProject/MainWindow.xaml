@@ -44,6 +44,7 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Center" >
             <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Background="LightGreen" 
+                    Command="{Binding DoNewUserCommand}"
                     >Új</Button>
             
             <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Background="LightBlue"
@@ -52,6 +53,7 @@
                     >Mentés</Button>
             
             <Button Margin="0 10 2 2" HorizontalAlignment="Right" MinWidth="80" Background="LightPink"
+                    Command="{Binding DoDeleteCommand}"
                     CommandParameter="{Binding User}"
                     >Törlés</Button>
             
